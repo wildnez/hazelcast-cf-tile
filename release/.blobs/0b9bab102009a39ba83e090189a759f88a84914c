@@ -1,0 +1,3 @@
+---
+buildpack: https://github.com/wildnez/java-buildpack.git
+path: hazelcast-cf-service-broker.war

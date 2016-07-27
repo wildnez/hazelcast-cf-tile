@@ -1,0 +1,5 @@
+# abort script on any command that exit with a non zero value
+set -e
+
+cp my_application/hazelcast-cf-service-broker.war ${BOSH_INSTALL_TARGET}
+cp my_application/manifest.yml ${BOSH_INSTALL_TARGET}

@@ -1,0 +1,8 @@
+---
+name: my_application
+
+dependencies: []
+
+files:
+- my_application/hazelcast-cf-service-broker.war
+- my_application/manifest.yml
