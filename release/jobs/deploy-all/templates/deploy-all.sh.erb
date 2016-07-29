@@ -288,15 +288,12 @@ apply_open_security_group "$APPLY_OPEN_SECURITY_GROUP"
 #
 
 export PKG_NAME=my_application
-export APP_NAME=my-application-0.0.6
+export APP_NAME=my-application-0.0.7
 export APP_HOST=my-application
 export DOCKER_IMAGE=""
 export NEEDS_CF_CREDS=""
 export HEALTH_CHECK=""
 deploy_app "$PKG_NAME" "$APP_NAME" "$APP_HOST" "$DOCKER_IMAGE" "$NEEDS_CF_CREDS" "$HEALTH_CHECK"
-export SVC_NAME="hz-service-1"
-export SVC_PLAN="default"
-provision_auto_service "$PKG_NAME" "$APP_NAME" "$SVC_NAME" "$SVC_PLAN"
 export SVC_NAME="<%= properties.my_application.persistence_store_type %>"
 export SVC_PLAN=""
 provision_auto_service "$PKG_NAME" "$APP_NAME" "$SVC_NAME" "$SVC_PLAN"
