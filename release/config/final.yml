@@ -2,5 +2,5 @@
 blobstore:
   provider: local
   options:
-    blobstore_path: /tmp/hz-sb-tile-blobs
-final_name: hz-sb-tile
+    blobstore_path: /tmp/hz-servicebroker-tile-blobs
+final_name: hz-servicebroker-tile

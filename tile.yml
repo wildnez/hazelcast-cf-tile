@@ -2,10 +2,10 @@
 # The high-level description of your tile.
 # Replace these properties with real values.
 #
-name: hz-sb-tile # By convention lowercase with dashes
+name: hz-servicebroker-tile # By convention lowercase with dashes
 icon_file: resources/icon.png
-label: Hazelcast Tile Sample
-description: Longer description of the tile's purpose
+label: Hazelcast Service Broker Sample
+description: Hazelcast Service Broker Sample
 
 # Global defaults (all optional)
 #
@@ -22,7 +22,7 @@ apply_open_security_group: true         # Apply open security group, default: fa
 # https://github.com/cf-platform-eng/tile-generator/blob/master/README.md
 #
 packages:
-- name: my-application
+- name: hz-service-broker-app
   type: app-broker
   enable_global_access_to_plans: true
   manifest:
