@@ -1,0 +1,30 @@
+---
+packages:
+- name: cf_cli
+  version: 54f5ee71e4f829d2f009461b79a9930c70f33bb5
+  fingerprint: 54f5ee71e4f829d2f009461b79a9930c70f33bb5
+  sha1: be311d346eaa504ca1dcc43a7423f2db4970fe26
+  dependencies: []
+- name: common
+  version: d83e9d13dc21a50d19a829232582496637f02eca
+  fingerprint: d83e9d13dc21a50d19a829232582496637f02eca
+  sha1: eb8dca892fcb60ae1088dbdda618c81c4eb34b69
+  dependencies: []
+- name: my_application
+  version: 8843c6111b09be24c507fae5f4a6e80e1f2c5f74
+  fingerprint: 8843c6111b09be24c507fae5f4a6e80e1f2c5f74
+  sha1: f181f021ffe80c0dcb2895190858e3ce04fd9dee
+  dependencies: []
+jobs:
+- name: delete-all
+  version: 0bd7bfb6b043c96bbf5bbfbf51d12dc9915b20ac
+  fingerprint: 0bd7bfb6b043c96bbf5bbfbf51d12dc9915b20ac
+  sha1: 7be506e8daa3546c7c4346a3e110b8db61d30144
+- name: deploy-all
+  version: a51d5719638d999a61f1e607b3d2f3711e5eb817
+  fingerprint: a51d5719638d999a61f1e607b3d2f3711e5eb817
+  sha1: e31f68c7ddca7aea83cd59d62fce90e60198cec6
+commit_hash: 1d181d1f
+uncommitted_changes: true
+name: hz-sb-tile
+version: 0.0.6
