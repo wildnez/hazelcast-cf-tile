@@ -24,9 +24,15 @@ apply_open_security_group: true         # Apply open security group, default: fa
 packages:
 - name: my-application
   type: app-broker
+  enable_global_access_to_plans: true
   manifest:
     path: resources/hazelcast-cf-service-broker.war
     buildpack: https://github.com/wildnez/java-buildpack.git
+  auto_services:                      # Auto-provision and bind services
+  - name: hz-service-1     # If using a broker in the same tile, the broker must preceed the app in this file
+    plan: default                # Optionally specify a plan (default is the first plan offered by the service)
+
+
 #   command: python app.py
 #   memory: 256M
 
