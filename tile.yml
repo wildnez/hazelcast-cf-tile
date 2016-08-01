@@ -4,15 +4,15 @@
 #
 name: hz-servicebroker-tile # By convention lowercase with dashes
 icon_file: resources/icon.png
-label: Hazelcast Service Broker Sample
-description: Hazelcast Service Broker Sample
+label: Hazelcast Service Broker (1 Aug)
+description: Hazelcast Service Broker (1 Aug)
 
 # Global defaults (all optional)
 #
-# org: test-org                         # Name of org to create for your apps
+org: hazelcast-org                         # Name of org to create for your apps
 # org_quota: 4096                       # Memory quota for that org in MB
-# space: test-space                     # Name of space to create for your apps
-apply_open_security_group: true         # Apply open security group, default: false
+space: hazelcast-space                     # Name of space to create for your apps
+apply_open_security_group: false         # Apply open security group, default: false
 
 # Specify the packages to be included in your tile.
 # The format of the section to include depends on the type
@@ -28,7 +28,7 @@ packages:
   manifest:
     path: resources/hazelcast-cf-service-broker.war
     buildpack: https://github.com/wildnez/java-buildpack.git
-
+    memory: 2048m
 #   command: python app.py
 #   memory: 256M
 
@@ -58,16 +58,16 @@ packages:
 # elsewhere in this template by using:
 #     (( .properties.<property-name> ))
 # 
-# forms:
-# - name: buildpack_properties
-#   label: Buildpack
-#   description: Buildpack_properties
-#   properties:
-#   - name: buildpack_rank
-#     type: integer
-#     default: 0
-#     label: Buildpack rank for this buildpack_rank
-#     description: Ranking of this buildpack relative to others
+forms:
+- name: mancenter_properties
+  label: Management Center Props
+  description: mancenter_properties
+  properties:
+  - name: MANAGEMENT_CENTER_URL
+    type: string
+    default: hazelcast-mancenter.apps.bigfastexperts.com
+    label: Management Center URL
+    description: Management Center URL
 
 # Add any dependencies your tile has on other installed products.
 # This is often appropriate when using automatic service provisioning

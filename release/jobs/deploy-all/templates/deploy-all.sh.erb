@@ -36,6 +36,7 @@ function import_opsmgr_variables() {
 	export SECURITY_USER_PASSWORD=<%= properties.security.password %>
 	export APPLY_OPEN_SECURITY_GROUP=<%= properties.apply_open_security_group %>
 	export ALLOW_PAID_SERVICE_PLANS=<%= properties.allow_paid_service_plans %>
+	export MANAGEMENT_CENTER_URL="<%= properties.management_center_url %>"
 }
 
 function prepare_cf_cli {
@@ -135,6 +136,7 @@ function add_env_vars() {
 	# Dynamic plans (if defined)
 
 	# Custom variables from tile.yml
+	cf set-env $1 MANAGEMENT_CENTER_URL "$MANAGEMENT_CENTER_URL"
 
 	# Addresses of bosh vms
 }
@@ -288,7 +290,7 @@ apply_open_security_group "$APPLY_OPEN_SECURITY_GROUP"
 #
 
 export PKG_NAME=hz_service_broker_app
-export APP_NAME=hz-service-broker-app-0.0.8
+export APP_NAME=hz-service-broker-app-0.0.12
 export APP_HOST=hz-service-broker-app
 export DOCKER_IMAGE=""
 export NEEDS_CF_CREDS=""

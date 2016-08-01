@@ -35,6 +35,8 @@ properties:
     description: 'Basic auth user'
   security.password:
     description: 'Basic auth password'
+  management_center_url:
+    description: Management Center URL
   hz_service_broker_app.name:
     description: 'Name of package'
   hz_service_broker_app.user:
