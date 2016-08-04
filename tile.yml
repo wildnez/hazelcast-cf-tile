@@ -27,7 +27,7 @@ packages:
   enable_global_access_to_plans: true
   manifest:
     path: resources/hazelcast-cf-service-broker.war
-    buildpack: https://github.com/wildnez/java-buildpack.git
+    buildpack: https://github.com/hazelcast/java-buildpack.git
     memory: 2048m
 #   command: python app.py
 #   memory: 256M
