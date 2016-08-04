@@ -2,5 +2,5 @@
 blobstore:
   provider: local
   options:
-    blobstore_path: /tmp/hz-servicebroker-tile-blobs
-final_name: hz-servicebroker-tile
+    blobstore_path: /tmp/hazelcast-for-pcf-blobs
+final_name: hazelcast-for-pcf

@@ -2,10 +2,10 @@
 # The high-level description of your tile.
 # Replace these properties with real values.
 #
-name: hz-servicebroker-tile # By convention lowercase with dashes
+name: hazelcast-for-pcf
 icon_file: resources/icon.png
-label: Hazelcast Service Broker (1 Aug)
-description: Hazelcast Service Broker (1 Aug)
+label: Hazelcast for PCF
+description: Hazelcast for PCF
 
 # Global defaults (all optional)
 #
@@ -22,7 +22,7 @@ apply_open_security_group: false         # Apply open security group, default: f
 # https://github.com/cf-platform-eng/tile-generator/blob/master/README.md
 #
 packages:
-- name: hz-service-broker-app
+- name: hazelcast-service-broker-app
   type: app-broker
   enable_global_access_to_plans: true
   manifest:
@@ -65,7 +65,7 @@ forms:
   properties:
   - name: MANAGEMENT_CENTER_URL
     type: string
-    default: hazelcast-mancenter.apps.bigfastexperts.com
+    default: http://hazelcast-mancenter.apps.bigfastexperts.com/mancenter
     label: Management Center URL
     description: Management Center URL
 

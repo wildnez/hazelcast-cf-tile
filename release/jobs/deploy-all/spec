@@ -4,7 +4,7 @@ templates:
   deploy-all.sh.erb: bin/run
 packages:
 - cf_cli
-- hz_service_broker_app
+- hazelcast_service_broker_app
 properties:
   domain:
     description: 'CloudFoundry system domain'
@@ -37,12 +37,12 @@ properties:
     description: 'Basic auth password'
   management_center_url:
     description: Management Center URL
-  hz_service_broker_app.name:
+  hazelcast_service_broker_app.name:
     description: 'Name of package'
-  hz_service_broker_app.user:
+  hazelcast_service_broker_app.user:
      description: 'Basic auth username'
-  hz_service_broker_app.password:
+  hazelcast_service_broker_app.password:
      description: 'Basic auth password'
-  hz_service_broker_app.enable_global_access_to_plans:
+  hazelcast_service_broker_app.enable_global_access_to_plans:
     description: 'Access to all service plans'
     default: false

@@ -1,0 +1,256 @@
+---
+name: hazelcast-for-pcf
+label: Hazelcast for PCF
+description: Hazelcast for PCF
+icon_image: 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
+product_version: '1.0.0'
+metadata_version: '1.5'
+minimum_version_for_upgrade: '0.0.1'
+rank: 1
+serial: true
+
+releases:
+- file: hazelcast-for-pcf-1.0.0.tgz
+  name: hazelcast-for-pcf
+  version: '1.0.0'
+
+stemcell_criteria:
+  os: ubuntu-trusty
+  requires_cpi: false
+  version: '3146.5'
+
+property_blueprints:
+#
+# Parameters for the entire product
+#
+- name: org
+  type: string
+  configurable: true
+  default: hazelcast-org
+- name: org_quota
+  type: integer
+  configurable: true
+  constraints:
+    min: 512
+    max: 4096
+  default: 4096
+- name: space
+  type: string
+  configurable: true
+  default: hazelcast-space
+- name: apply_open_security_group
+  type: boolean
+  configurable: true
+  default: False
+- name: allow_paid_service_plans
+  type: boolean
+  configurable: true
+  default: False
+#
+# Standard properties for package hazelcast_service_broker_app
+#
+- name: hazelcast_service_broker_app_enable_global_access_to_plans
+  type: boolean
+  configurable: true
+  default: True
+#
+# Custom properties from the tile.yml file
+#
+- name: management_center_url # Refer to this elsewhere as (( .properties.management_center_url ))
+  type: string
+  default: http://hazelcast-mancenter.apps.bigfastexperts.com/mancenter
+  configurable: true
+  optional: false
+
+form_types:
+#
+# Custom form mancenter_properties from the tile.yml file
+#
+- name: mancenter_properties
+  label: Management Center Props
+  description: mancenter_properties
+  property_inputs:
+  - reference: .properties.management_center_url
+    label: Management Center URL
+    description: Management Center URL
+#
+# Service access form
+#
+- name: service_access
+  label: Service Access
+  description: Determine availability of services
+  property_inputs:
+  - reference: .properties.hazelcast_service_broker_app_enable_global_access_to_plans
+    label: Enable global access to plans of service hazelcast_service_broker_app
+    description: "Enable global access to plans in the marketplace"
+
+job_types:
+#
+# Default compilation job
+#
+- name: compilation
+  resource_label: compilation
+  resource_definitions:
+   - name: ram
+     type: integer
+     configurable: true
+     default: 4096
+   - name: ephemeral_disk
+     type: integer
+     configurable: true
+     default: 10240
+   - name: persistent_disk
+     type: integer
+     configurable: true
+     default: 0
+   - name: cpu
+     type: integer
+     configurable: true
+     default: 2
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  single_az_only: true
+  instance_definitions:
+  - name: instances
+    type: integer
+    configurable: true
+    default: 1
+#
+# deploy-all job
+#
+- name: deploy-all
+  resource_label: deploy-all
+  errand: true
+  templates:
+  - name: deploy-all
+    release: hazelcast-for-pcf
+  resource_definitions:
+  - name: ram
+    type: integer
+    configurable: false
+    default: 1024
+  - name: ephemeral_disk
+    type: integer
+    configurable: false
+    default: 4096
+  - name: persistent_disk
+    type: integer
+    configurable: false
+    default: 0
+  - name: cpu
+    type: integer
+    configurable: false
+    default: 1
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  single_az_only: false
+  instance_definitions:
+  - name: instances
+    type: integer
+    configurable: false
+    default: 1
+  property_blueprints:
+  - name: vm_credentials
+    type: salted_credentials
+    default:
+      identity: vcap
+  - name: app_credentials
+    type: salted_credentials
+  manifest: |
+    domain: (( ..cf.cloud_controller.system_domain.value ))
+    app_domains:
+    - (( ..cf.cloud_controller.apps_domain.value ))
+    org: (( .properties.org.value ))
+    space: (( .properties.space.value ))
+    ssl:
+      skip_cert_verify: (( ..cf.ha_proxy.skip_cert_verify.value ))
+    cf:
+      admin_user: (( ..cf.uaa.system_services_credentials.identity ))
+      admin_password: (( ..cf.uaa.system_services_credentials.password ))
+    org_quota: (( .properties.org_quota.value ))
+    apply_open_security_group: (( .properties.apply_open_security_group.value ))
+    allow_paid_service_plans: (( .properties.allow_paid_service_plans.value ))
+    security:
+      user: (( .deploy-all.app_credentials.identity ))
+      password: (( .deploy-all.app_credentials.password ))
+    management_center_url: (( .properties.management_center_url.value ))
+    hazelcast_service_broker_app:
+      name: hazelcast_service_broker_app
+      user: (( .deploy-all.app_credentials.identity ))
+      password: (( .deploy-all.app_credentials.password ))
+      enable_global_access_to_plans: (( .properties.hazelcast_service_broker_app_enable_global_access_to_plans.value ))
+#
+# delete-all job
+#
+- name: delete-all
+  resource_label: delete-all
+  errand: true
+  templates:
+  - name: delete-all
+    release: hazelcast-for-pcf
+  resource_definitions:
+  - name: ram
+    type: integer
+    configurable: false
+    default: 1024
+  - name: ephemeral_disk
+    type: integer
+    configurable: false
+    default: 4096
+  - name: persistent_disk
+    type: integer
+    configurable: false
+    default: 0
+  - name: cpu
+    type: integer
+    configurable: false
+    default: 1
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  single_az_only: false
+  instance_definitions:
+  - name: instances
+    type: integer
+    configurable: false
+    default: 1
+  property_blueprints:
+  - name: vm_credentials
+    type: salted_credentials
+    default:
+      identity: vcap
+  - name: app_credentials
+    type: salted_credentials
+  manifest: |
+    domain: (( ..cf.cloud_controller.system_domain.value ))
+    app_domains:
+    - (( ..cf.cloud_controller.apps_domain.value ))
+    org: (( .properties.org.value ))
+    space: (( .properties.space.value ))
+    ssl:
+      skip_cert_verify: (( ..cf.ha_proxy.skip_cert_verify.value ))
+    cf:
+      admin_user: (( ..cf.uaa.system_services_credentials.identity ))
+      admin_password: (( ..cf.uaa.system_services_credentials.password ))
+
+post_deploy_errands:
+- name: deploy-all
+
+pre_delete_errands:
+- name: delete-all
+
+update:
+  canaries: 1
+  canary_watch_time: 10000-100000
+  max_in_flight: 1
+  update_watch_time: 10000-100000
+
+requires_product_versions:
+- name: cf
+  version: '~> 1.5'
+
+provides_product_versions:
+- name: hazelcast-for-pcf
+  version: '1.0.0'

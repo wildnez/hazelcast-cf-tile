@@ -1,0 +1,30 @@
+---
+packages:
+- name: cf_cli
+  version: 54f5ee71e4f829d2f009461b79a9930c70f33bb5
+  fingerprint: 54f5ee71e4f829d2f009461b79a9930c70f33bb5
+  sha1: 19dc66f6a96adaacd33ed4bcc45a7f6e35aae153
+  dependencies: []
+- name: common
+  version: d83e9d13dc21a50d19a829232582496637f02eca
+  fingerprint: d83e9d13dc21a50d19a829232582496637f02eca
+  sha1: 7fbb21eb35a8029783737108cd9dacffda6b15d3
+  dependencies: []
+- name: hazelcast_service_broker_app
+  version: f084ae15ea16c7f366d762d7ea3f08bafbb107f5
+  fingerprint: f084ae15ea16c7f366d762d7ea3f08bafbb107f5
+  sha1: f6f16266eceaf8456ad3632fe68df39ddbb73bf8
+  dependencies: []
+jobs:
+- name: delete-all
+  version: 29673c20337a65a6a70ffae5d62001b6e878c8e3
+  fingerprint: 29673c20337a65a6a70ffae5d62001b6e878c8e3
+  sha1: c994d1ede95e5bde0dc11eab1b4596b743139820
+- name: deploy-all
+  version: 2251d1b8c11ea1b6b19788bd187c95b203a46766
+  fingerprint: 2251d1b8c11ea1b6b19788bd187c95b203a46766
+  sha1: b8544f871191c0359e816613b520c25be35e6c45
+commit_hash: 441cf468
+uncommitted_changes: true
+name: hazelcast-for-pcf
+version: 1.0.0
